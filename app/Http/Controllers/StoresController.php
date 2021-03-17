@@ -9,7 +9,7 @@ class StoresController extends Controller
 {
     public function index(){ 
         $stores = Stores::paginate(5);
-        // dd($stores);die;    
+        
         return view('Stores.stores_list', compact('stores'));
     }
     
